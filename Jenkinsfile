@@ -4,6 +4,7 @@ node {
 
    // Get some code from a GitHub repository
    checkout scm
+   sh 'make clean'
 
    // Mark the code build 'stage'....
    stage 'Build'
