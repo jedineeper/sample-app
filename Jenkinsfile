@@ -9,7 +9,7 @@ node {
    stage 'Build'
 
    // Run the maven build
-   sh 'make test'
+   sh 'make build'
 
    // test al lthe things
    stage 'Test'
