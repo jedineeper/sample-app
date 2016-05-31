@@ -14,5 +14,8 @@ test   : .
 release:
 	docker push $(NAME)
 
+deploy: .
+	kubectl --kubeconfig ~/.kube/style-dev create -f deploy
+
 clean  :
 	@$(RM) .built
