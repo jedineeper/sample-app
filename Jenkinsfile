@@ -1,19 +1,19 @@
 node {
-   // Mark the code checkout 'stage'....
-   stage 'Checkout'
+  // Mark the code checkout 'stage'....
+  stage 'Checkout'
 
-   // Get some code from a GitHub repository
-   checkout scm
-   sh 'make clean'
+  // Get some code from a GitHub repository
+  checkout scm
+  sh 'make clean'
 
-   // Mark the code build 'stage'....
-   stage 'Build'
+  // Mark the code build 'stage'....
+  stage 'Build'
 
-   // Run the maven build
-   sh 'make build'
+  // Run the maven build
+  sh 'make build'
 
-   // test al lthe things
-   stage 'Test'
+  // test al lthe things
+  stage 'Test'
 
-   sh 'make test'
+  sh 'make test'
 }
