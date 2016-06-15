@@ -3,7 +3,7 @@ node {
   stage 'Checkout'
 
   // Get some code from a GitHub repository
-  checkout scm
+//  checkout scm
   sh 'make clean'
 
   // Mark the code build 'stage'....
